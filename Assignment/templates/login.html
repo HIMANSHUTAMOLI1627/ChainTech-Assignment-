@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+{% block content %}
+<div class="form_data">
+    <h1 class="user_details">USER DETAILS FORM</h1>
+    <form action="/submit" method="POST" >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" class="box"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" class="box"><br><br>
+        <input type="submit" value="Submit" class="button">
+    </form>
+</div>    
+{% endblock content %}

@@ -1,0 +1,21 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body class="back_color">
+    
+    <header>
+        <h1 class="sub_h1">RIVIEW OF SUBMMITED INFORMATION</h1>
+    </header>
+    <main>
+       <p class="info_p">NAME: {{ info[0] }}</p>
+       <p class="info_p">EMAIL:{{ info[1] }}</p>
+       <p class="sub_link"><a href="/submissions" >See Another submissions</a></p>
+    </main>
+</body>
+</html>

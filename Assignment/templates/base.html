@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Project</title>
+        <link rel="stylesheet"  href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a class="nav_sec" href="#home">Home</a>
+                <a href="#main_content">Content</a> 
+                <a href="#about">About</a>
+                <a href="/login" id="Login">Login</a>
+            </div>
+        </header>
+		<main>
+            <div class="main_content">
+                <p>Welcome to the main content area!</p>
+                <p>Date And Time {{ current_time }}</p>
+            </div>      
+		    {% block content %}
+            
+            {% endblock content%}
+		</main>
+		<footer id="about">
+		  <div class="about_bot">
+                <h1>ABOUT ME</h1>
+                <img src="{{url_for('static',filename='images/download.jpg')}}" alt="image">
+                <h2>Himanshu Tamoli</h2>
+                <p>&#128383;+91 9784488955</p>
+                <p>&#128231;himanshutamoli786@gmail.com</p>       
+        </div>   
+		</footer>
+    </body>
+</html>
